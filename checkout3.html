@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Checkout | BitCrunchLab</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+  <header class="checkout-header-pro">
+    <div class="header-icon">
+      <svg width="42" height="42" viewBox="0 0 42 42" fill="none">
+        <circle cx="21" cy="21" r="21" fill="#4a47a3"/>
+        <path d="M13 22.5L19 28.5L29 16.5" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <h1>Checkout – BitCrunchLab</h1>
+    <p class="checkout-subtitle">
+      Secure your Founder’s Deal and get a modern website with full support.<br>
+      <span class="checkout-highlight">Fast. Reliable. <span class="delivery">2–4 Days Delivery.</span> No hidden fees.</span>
+    </p>
+  </header>
+  
+  
+  
+  <div class="checkout-container">
+    <!-- Left: What's included -->
+    <div class="checkout-info">
+      <h2>Package 3:Momentum Package</h2>
+      <div class="subtitle">(First 51-100 Client)</div>
+      <div class="price-row">
+        <span class="price-old">£600.00</span>
+        <span class="price-new">£499.99</span>
+      </div>
+      <ul>
+        <li>Custom website (up to 4 pages/packages)</li>
+        <li>Mobile responsive design</li>
+        <li>Basic SEO setup</li>
+        <li>Google Analytics setup</li>
+        <li class="service-title">6 Months of Full Service:</li>
+        <li>Hosting</li>
+        <li>Content edits</li>
+        <li>Tech support</li>
+        <li>Monthly backups</li>
+      </ul>
+      <div class="note">No hidden fees. One-time payment.</div>
+      <div class="why-choose">
+        All-in-one solution for small businesses: modern website, essential SEO, analytics, and a full year of support and updates-at a founder’s price!
+      </div>
+    </div>
+    <!-- Right: Checkout form -->
+    <div class="checkout-form-area">
+      <h3>Tell us about your business</h3>
+      <form class="checkout-form" id="checkoutForm">
+        <div>
+          <label for="name">Full Name *</label>
+          <input type="text" id="name" name="name" required autocomplete="name">
+        </div>
+        <div>
+          <label for="email">Email Address *</label>
+          <input type="email" id="email" name="email" required autocomplete="email">
+        </div>
+        <div>
+          <label for="business">Business Name *</label>
+          <input type="text" id="business" name="business" required>
+        </div>
+        <div>
+          <label for="website-type">Type of Website *</label>
+          <select id="website-type" name="website-type" required>
+            <option value="">Select...</option>
+            <option value="informational">Informational</option>
+            <option value="portfolio">Portfolio</option>
+            <option value="ecommerce">E-commerce</option>
+            <option value="booking">Booking/Appointment</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div>
+          <label for="features">What features do you need?</label>
+          <textarea id="features" name="features" placeholder="e.g. Blog, gallery, online booking, newsletter signup, etc."></textarea>
+        </div>
+        <div>
+          <label for="goals">Describe your goals</label>
+          <textarea id="goals" name="goals" placeholder="What do you want your website to achieve?"></textarea>
+        </div>
+        <button type="submit" class="buy-btn">Buy Now</button>
+      </form>
+      <div class="payment-methods">
+        <span class="payment-methods-label">Secure payment powered by
+          <img class="stripe-logo" src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Stripe_Logo%2C_revised_2016.svg" alt="Stripe" />
+        </span>
+        <div class="payment-icons">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="Visa">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png" alt="Mastercard">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Apple_Pay_logo.png" alt="Apple Pay">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Google_Pay_Logo.svg" alt="Google Pay">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Stripe integration placeholder -->
+  <script>
+    // Replace this with your Stripe integration
+    document.getElementById('checkoutForm').onsubmit = function(e) {
+      e.preventDefault();
+      alert('This would redirect to Stripe Checkout or open Stripe Elements.');
+      // Here you would collect form data and initiate Stripe payment
+    };
+  </script>
+</body>
+</html>
